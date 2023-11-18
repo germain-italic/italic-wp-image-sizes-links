@@ -22,7 +22,7 @@ function add_image_size_links($form_fields, $post) {
 
     $size_links = '';
 
-	echo '<ul>';
+	echo '<div><ul>';
     foreach ($available_sizes as $size) {
         $image = wp_get_attachment_image_src($attachment_id, $size);
         if ($image) {
@@ -32,7 +32,7 @@ function add_image_size_links($form_fields, $post) {
             $size_links .= "<li><a href='$url' target='_blank'>$size ($width x $height)</a></li>";
         }
     }
-	echo '</ul>';
+	echo '</ul></div>';
 
     $form_fields['image-size-links'] = array(
         'label' => 'Image Sizes',
