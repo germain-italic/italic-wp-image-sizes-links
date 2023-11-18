@@ -1,17 +1,21 @@
 <?php
-/*
-Plugin Name: Italic WP Image Sizes Links
-Plugin URI: https://github.com/germain-italic/italic-wp-image-sizes-links
-Description: Display links to all available image sizes on the image edit page.
-Version: 1.0.0
-Author: Germain-Italic
-Author URI: https://www.italic.fr
-License: GPLv2 or later
+
+/**
+ * Plugin Name:       Italic WP Image Sizes Links
+ * Plugin URI:        https://https://github.com/germain-italic/italic-wp-image-sizes-links
+ * Description:       Display links to all available image sizes on the image edit page.
+ * Version:           1.0.0
+ * Author:            Germain-Italic
+ * Author URI:        https://https://www.italic.fr/
+ * License:           GPL-2.0+
+ * License URI:       http://www.gnu.org/licenses/gpl-2.0.txt
+ * Text Domain:       italic-image-sizes-links
 */
 
 
-if (!defined('ABSPATH')) {
-    exit; // Exit if accessed directly
+// If this file is called directly, abort.
+if ( ! defined( 'WPINC' ) ) {
+	die;
 }
 
 add_filter('attachment_fields_to_edit', 'add_image_size_links', 10, 2);
