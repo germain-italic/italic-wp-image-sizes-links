@@ -4,7 +4,7 @@
  * Plugin Name:       Italic WP Image Sizes Links
  * Plugin URI:        https://https://github.com/germain-italic/italic-wp-image-sizes-links
  * Description:       Display links to all available image sizes on the image edit page.
- * Version:           1.0.0
+ * Version:           1.0.1
  * Author:            Germain-Italic
  * Author URI:        https://https://www.italic.fr/
  * License:           GPL-2.0+
